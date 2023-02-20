@@ -27,8 +27,8 @@ public class PostsController {
     }
 
 	@GetMapping(path = "/{id}")
-    public ResponseEntity<Optional<Posts>> findById(@PathVariable long id){
-        return ResponseEntity.ok(postService.findById(id));
+    public ResponseEntity<Posts> findById(@PathVariable long id){
+        return ResponseEntity.ok(postService.findByIdOrThrowBadRequestException(id));
     }
 	
 }
