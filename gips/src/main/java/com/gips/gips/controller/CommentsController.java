@@ -13,9 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.gips.gips.domain.Comments;
-import com.gips.gips.domain.Posts;
+import com.gips.gips.requests.CommentsPostRequestBody;
 import com.gips.gips.service.CommentsService;
-import com.gips.gips.service.PostsService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -42,7 +41,7 @@ private final CommentsService commentsService;
 	}
 	
 	@PostMapping
-	public ResponseEntity<Comments> save(@RequestBody AssociadoPostRequestBody associadoPostRequestBody){
-		return new ResponseEntity<>(commentsService.save(associadoPostRequestBody), HttpStatus.CREATED);
+	public ResponseEntity<Comments> save(@RequestBody CommentsPostRequestBody commentsPostRequestBody){
+		return new ResponseEntity<>(commentsService.save(commentsPostRequestBody), HttpStatus.CREATED);
 	}
 }
