@@ -11,17 +11,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "tb_posts")
+@Table(name = "tb_comments")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Posts {
+public class Comments {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	private String title;
-	private String info;
-	private String urlImg;
+	private String comment;
 }
