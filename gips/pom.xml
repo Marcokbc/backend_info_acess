@@ -12,7 +12,7 @@
 	<artifactId>gips</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>gips</name>
-	<description>Projeto para o TCC de Thamara.</description>
+	<description>Projeto para o TCC.</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -27,16 +27,9 @@
 		</dependency>
 		
 		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>42.1.1</version>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
-		
-		<dependency>
-          <groupId>com.google.cloud.sql</groupId>
-          <artifactId>postgres-socket-factory</artifactId>
-          <version>1.0.4</version>
-      </dependency>
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
