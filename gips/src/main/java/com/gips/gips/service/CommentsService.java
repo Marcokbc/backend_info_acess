@@ -2,6 +2,7 @@ package com.gips.gips.service;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,7 +12,6 @@ import com.gips.gips.exception.BadRequestException;
 import com.gips.gips.repository.CommentsRepository;
 import com.gips.gips.requests.CommentsPostRequestBody;
 
-import jakarta.transaction.Transactional;
 
 
 @Service
