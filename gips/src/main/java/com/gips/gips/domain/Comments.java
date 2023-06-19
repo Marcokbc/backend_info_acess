@@ -22,5 +22,6 @@ public class Comments {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
+	private String email;
 	private String comment;
 }

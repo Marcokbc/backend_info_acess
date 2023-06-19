@@ -24,6 +24,7 @@ public class Posts {
 	
 	private String title;
 	private String type;
+	private String resume;
 	private String info;
 	private String urlImg;
 }
